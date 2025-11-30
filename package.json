@@ -1,0 +1,32 @@
+{
+  "name": "api_estados_cidades",
+  "version": "1.0.0",
+  "description": "API REST simples que permite gerenciar Estados e Cidades do Brasil.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RafaelDesenvolvedor1/API_Estados_Cidades.git"
+  },
+  "keywords": [],
+  "author": "Rafaeel S. Salgado",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/RafaelDesenvolvedor1/API_Estados_Cidades/issues"
+  },
+  "homepage": "https://github.com/RafaelDesenvolvedor1/API_Estados_Cidades#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  },
+  "dependencies": {
+    "body-parser": "^2.2.1",
+    "consign": "^0.1.6",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "mysql2": "^3.15.3",
+    "sequelize": "^6.37.7"
+  }
+}
