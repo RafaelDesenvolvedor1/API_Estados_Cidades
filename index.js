@@ -9,5 +9,6 @@ consign({ cwd: "src" })
   .then("models")
   .then("associations.js")
   .then("middlewares.js")
+  .then("routes")
   .then("server.js")
   .into(app);
