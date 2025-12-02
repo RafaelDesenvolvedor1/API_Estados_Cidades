@@ -1,5 +1,7 @@
 const Sequelize = require('sequelize');
-const config = require('./config/configDB.js');
+const config = require('./environmentConfig');
+
+
 
 let sequelize = null;
 
