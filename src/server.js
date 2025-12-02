@@ -7,11 +7,13 @@ module.exports = (app) => {
         console.log("Conexão com banco de dados estabelecida com sucesso!");
       } catch (err) {
         console.log("Erro na conexão com o banco de dados!");
-        console.error(err)
+        console.error(err);
       }
-      app.listen(port, () => {
-        console.log(`Aplicação rodando na porta ${port}`);
-      });
+      if (process.env.NODE_ENV !== "test") {
+        app.listen(port, () => {
+          console.log(`Aplicação rodando na porta ${port}`);
+        });
+      }
     } catch (err) {
       console.log("Erro de conexão");
       console.error(err);
