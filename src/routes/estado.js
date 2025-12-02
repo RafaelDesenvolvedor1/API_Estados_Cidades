@@ -88,21 +88,6 @@ module.exports = (app) => {
       res.sendStatus(412).json({ msg: err.message });
     }
   });
-  // buscar estado pela UF (além do ID)
-  app.route("/estados/:uf").get(async (req, res) => {
-    try {
-      const { uf } = req.params;
-      const where = { uf };
-      const result = await Estado.findOne({ where });
-      if (result) {
-        res.json(result);
-      } else {
-        res.sendStatus(404);
-      }
-    } catch (err) {
-      res.status(412).json({ msg: err.message });
-    }
-  });
 
   app
     .route("/estados/:id")
