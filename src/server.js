@@ -9,7 +9,7 @@ module.exports = (app) => {
         console.log("Erro na conexão com o banco de dados!");
         console.error(err);
       }
-      if (process.env.NODE_ENV.trim() !== "test") {
+      if (process.env.NODE_ENV !== "test ") {
         app.listen(port, () => {
           console.log(`Aplicação rodando na porta ${port}`);
         });

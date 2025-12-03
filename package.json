@@ -4,8 +4,18 @@
   "description": "API REST simples que permite gerenciar Estados e Cidades do Brasil.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
-    "test": "SET NODE_ENV=test && mocha src/test/**/*.js"
+    "start": "npm run apidoc && nodemon index.js ",
+    "test": "SET NODE_ENV=test && mocha src/test/**/*.js",
+    "apidoc": "apidoc -i src/routes/ -o src/public/apidoc"
+  },
+  "apidoc": {
+    "name": "Documentação - API Estados Brasileiros",
+    "apidoc":"src",
+    "template": {
+      "forceLanguage": "pt_br",
+      "withCompare": false,
+      "responsive": true
+    }
   },
   "repository": {
     "type": "git",
@@ -20,6 +30,7 @@
   },
   "homepage": "https://github.com/RafaelDesenvolvedor1/API_Estados_Cidades#readme",
   "devDependencies": {
+    "apidoc": "^0.29.0",
     "chai": "^6.2.1",
     "mocha": "^11.7.5",
     "nodemon": "^3.1.11",
