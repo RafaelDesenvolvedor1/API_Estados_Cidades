@@ -14,7 +14,7 @@ APIs, autenticação e testes automatizados.
 -   **Express** -- Framework web
 -   **Sequelize** -- ORM SQL
 -   **MySQL** -- Banco de dados
--   **Passport + JWT** -- Autenticação
+-   **Autenticação simples via Bearer Token (middleware próprio)** -- Autenticação
 -   **Mocha + Chai** -- Testes automatizados
 -   **apiDoc** -- Documentação da API
 -   **Consign** -- Autoload das rotas, models e controllers
